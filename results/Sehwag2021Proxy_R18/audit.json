@@ -1,0 +1,44 @@
+{
+  "fixed": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 35,
+    "clean_correct": 109
+  },
+  "random": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 34,
+    "clean_correct": 109
+  },
+  "reactive": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 35,
+    "clean_correct": 109
+  },
+  "planning": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 36,
+    "clean_correct": 109
+  },
+  "apgd_ce": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 34,
+    "clean_correct": 109
+  },
+  "apgd_dlr": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 33,
+    "clean_correct": 109
+  },
+  "autoattack": {
+    "valid": true,
+    "max_linf": 0.03137257695198059,
+    "successes": 10,
+    "clean_correct": 27
+  }
+}

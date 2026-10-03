@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "musearch-adversarial"
+version = "0.1.0"
+description = "MuZero-inspired learned search for adversarial testing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.5", "numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.11"]
+benchmark = [
+  "robustbench==1.1.1",
+  "autoattack @ git+https://github.com/fra31/auto-attack.git@a39220048b3c9f2cca9a4d3a54604793c68eca7e",
+]
+
+[project.scripts]
+musearch-pilot = "musearch.experiment:main"
+musearch-benchmark = "musearch.benchmark:main"
+musearch-heldout = "musearch.heldout:main"
+musearch-report = "musearch.summarize_heldout:main"
+
+[tool.setuptools.packages.find]
+include = ["musearch*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".deps", ".deps-dev", "data", "runs", "results", "restructure.py"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

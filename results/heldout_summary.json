@@ -1,0 +1,316 @@
+{
+  "Sehwag2021Proxy_R18": {
+    "methods": {
+      "fixed": {
+        "pool": 128,
+        "successes": 35,
+        "clean_correct": 109,
+        "success_rate_ci95_percent": [
+          24.082976316647986,
+          41.355258523995765
+        ],
+        "observed_adversarial_accuracy_percent": 57.8125,
+        "forwards": 5124,
+        "backwards": 2498,
+        "seconds": 162.01542789995437
+      },
+      "random": {
+        "pool": 128,
+        "successes": 34,
+        "clean_correct": 109,
+        "success_rate_ci95_percent": [
+          23.261114577367636,
+          40.40472204997578
+        ],
+        "observed_adversarial_accuracy_percent": 58.59375,
+        "forwards": 5338,
+        "backwards": 2605,
+        "seconds": 146.1625729999505
+      },
+      "reactive": {
+        "pool": 128,
+        "successes": 35,
+        "clean_correct": 109,
+        "success_rate_ci95_percent": [
+          24.082976316647986,
+          41.355258523995765
+        ],
+        "observed_adversarial_accuracy_percent": 57.8125,
+        "forwards": 5102,
+        "backwards": 2487,
+        "seconds": 150.82964069978334
+      },
+      "planning": {
+        "pool": 128,
+        "successes": 36,
+        "clean_correct": 109,
+        "success_rate_ci95_percent": [
+          24.908495766603775,
+          42.302137287340294
+        ],
+        "observed_adversarial_accuracy_percent": 57.03125,
+        "forwards": 5052,
+        "backwards": 2462,
+        "seconds": 164.2142602999811
+      },
+      "apgd_ce": {
+        "pool": 128,
+        "successes": 34,
+        "clean_correct": 109,
+        "success_rate_ci95_percent": [
+          23.261114577367636,
+          40.40472204997578
+        ],
+        "observed_adversarial_accuracy_percent": 58.59375,
+        "forwards": 3725,
+        "backwards": 3597,
+        "seconds": 100.6783155000303
+      },
+      "apgd_dlr": {
+        "pool": 128,
+        "successes": 33,
+        "clean_correct": 109,
+        "success_rate_ci95_percent": [
+          22.442993568724834,
+          39.450444845318266
+        ],
+        "observed_adversarial_accuracy_percent": 59.375,
+        "forwards": 3725,
+        "backwards": 3597,
+        "seconds": 91.29217660002178
+      },
+      "autoattack": {
+        "pool": 32,
+        "successes": 10,
+        "clean_correct": 27,
+        "success_rate_ci95_percent": [
+          21.532512960965597,
+          55.77076558789761
+        ],
+        "observed_adversarial_accuracy_percent": 53.125,
+        "forwards": 134726,
+        "backwards": 33480,
+        "seconds": 1988.0025899999891
+      }
+    },
+    "comparisons": {
+      "planning_vs_fixed": {
+        "wins": 1,
+        "losses": 0,
+        "difference_pp": 0.9174311926605505,
+        "ci95_pp": [
+          0.0,
+          2.7522935779816518
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_vs_random": {
+        "wins": 2,
+        "losses": 0,
+        "difference_pp": 1.834862385321101,
+        "ci95_pp": [
+          0.0,
+          4.587155963302752
+        ],
+        "mcnemar_exact_p": 0.5,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_vs_reactive": {
+        "wins": 1,
+        "losses": 0,
+        "difference_pp": 0.9174311926605505,
+        "ci95_pp": [
+          0.0,
+          2.7522935779816518
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_vs_apgd_union": {
+        "wins": 1,
+        "losses": 0,
+        "difference_pp": 0.9174311926605505,
+        "ci95_pp": [
+          0.0,
+          2.7522935779816518
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "apgd_union_successes": 35,
+      "planning_vs_autoattack_subset": {
+        "wins": 0,
+        "losses": 0,
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_subset_successes": 10,
+      "fixed_subset_successes": 10,
+      "reactive_subset_successes": 10,
+      "subset_clean_correct": 27
+    }
+  },
+  "Rade2021Helper_R18_extra": {
+    "methods": {
+      "fixed": {
+        "pool": 128,
+        "successes": 40,
+        "clean_correct": 117,
+        "success_rate_ci95_percent": [
+          26.218501955549065,
+          43.16286735173396
+        ],
+        "observed_adversarial_accuracy_percent": 60.15625,
+        "forwards": 5386,
+        "backwards": 2629,
+        "seconds": 192.875703699945
+      },
+      "random": {
+        "pool": 128,
+        "successes": 38,
+        "clean_correct": 117,
+        "success_rate_ci95_percent": [
+          24.6675826540576,
+          41.40366441617494
+        ],
+        "observed_adversarial_accuracy_percent": 61.71875,
+        "forwards": 5592,
+        "backwards": 2732,
+        "seconds": 221.42322529980447
+      },
+      "reactive": {
+        "pool": 128,
+        "successes": 40,
+        "clean_correct": 117,
+        "success_rate_ci95_percent": [
+          26.218501955549065,
+          43.16286735173396
+        ],
+        "observed_adversarial_accuracy_percent": 60.15625,
+        "forwards": 5288,
+        "backwards": 2580,
+        "seconds": 189.807809800026
+      },
+      "planning": {
+        "pool": 128,
+        "successes": 40,
+        "clean_correct": 117,
+        "success_rate_ci95_percent": [
+          26.218501955549065,
+          43.16286735173396
+        ],
+        "observed_adversarial_accuracy_percent": 60.15625,
+        "forwards": 5296,
+        "backwards": 2584,
+        "seconds": 218.44502780027688
+      },
+      "apgd_ce": {
+        "pool": 128,
+        "successes": 35,
+        "clean_correct": 117,
+        "success_rate_ci95_percent": [
+          22.36424762423267,
+          38.741816090424145
+        ],
+        "observed_adversarial_accuracy_percent": 64.0625,
+        "forwards": 3989,
+        "backwards": 3861,
+        "seconds": 140.98061850003432
+      },
+      "apgd_dlr": {
+        "pool": 128,
+        "successes": 40,
+        "clean_correct": 117,
+        "success_rate_ci95_percent": [
+          26.218501955549065,
+          43.16286735173396
+        ],
+        "observed_adversarial_accuracy_percent": 60.15625,
+        "forwards": 3989,
+        "backwards": 3861,
+        "seconds": 101.10131330002332
+      },
+      "autoattack": {
+        "pool": 32,
+        "successes": 11,
+        "clean_correct": 31,
+        "success_rate_ci95_percent": [
+          21.116659093865405,
+          53.05204593563113
+        ],
+        "observed_adversarial_accuracy_percent": 62.5,
+        "forwards": 158501,
+        "backwards": 39412,
+        "seconds": 2493.027106099995
+      }
+    },
+    "comparisons": {
+      "planning_vs_fixed": {
+        "wins": 1,
+        "losses": 1,
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -2.564102564102564,
+          2.564102564102564
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_vs_random": {
+        "wins": 2,
+        "losses": 0,
+        "difference_pp": 1.7094017094017095,
+        "ci95_pp": [
+          0.0,
+          4.273504273504273
+        ],
+        "mcnemar_exact_p": 0.5,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_vs_reactive": {
+        "wins": 0,
+        "losses": 0,
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_vs_apgd_union": {
+        "wins": 0,
+        "losses": 0,
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "apgd_union_successes": 40,
+      "planning_vs_autoattack_subset": {
+        "wins": 0,
+        "losses": 0,
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "note": "Descriptive, unadjusted exploratory comparisons; single training seed"
+      },
+      "planning_subset_successes": 11,
+      "fixed_subset_successes": 10,
+      "reactive_subset_successes": 11,
+      "subset_clean_correct": 31
+    }
+  }
+}
